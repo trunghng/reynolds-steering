@@ -8,7 +8,7 @@ var wallDist = 25;
 function setup() {
     randomSeed(13);
     let myCanvas = createCanvas(600, 400);
-    myCanvas.parent('container');createCanvas(640, 480);
+    myCanvas.parent('container');
     cars = [];
     cars.push(new Car(createVector(0, height / 2), 2, 0.04));
     cars.push(new Car(createVector(0, height / 2), 3, 0.1));
@@ -364,8 +364,6 @@ class Path {
             stroke(120);
             line(this.points[i].x, this.points[i].y, this.points[i+1].x, this.points[i+1].y);
         }
-        pop();
-        push();
         for (let i = 0; i < this.points.length - 1; i++) {
             strokeWeight(3);
             stroke(255);

@@ -3,7 +3,7 @@ var flock;
 function setup() {
     randomSeed(0);
     let myCanvas = createCanvas(640, 540);
-    myCanvas.parent('myContainer');
+    myCanvas.parent('container');
     flock = new Flock();
     let n = 100;
     for (let i = 0; i < n; i++) {
